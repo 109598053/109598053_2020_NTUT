@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="LogicSimulatorTest" tests="2" skipped="0" failures="2" errors="0" timestamp="2020-08-24T08:40:05" hostname="DESKTOP-L8DB3GN" time="0.001">
+<testsuite name="LogicSimulatorTest" tests="2" skipped="0" failures="2" errors="0" timestamp="2020-08-25T03:56:40" hostname="DESKTOP-L8DB3GN" time="0.004">
   <properties/>
-  <testcase name="testGetSimulationResult" classname="LogicSimulatorTest" time="0.001">
-    <failure message="org.junit.ComparisonFailure: expected:&lt;[Simulation Result:&#10;i i i | o&#10;1 2 3 | 1&#10;------+--&#10;0 1 1 | 0&#10;]&gt; but was:&lt;[getSimulationResult]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[Simulation Result:
-i i i | o
-1 2 3 | 1
-------+--
-0 1 1 | 0
-]&gt; but was:&lt;[getSimulationResult]&gt;
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at LogicSimulatorTest.testGetSimulationResult(LogicSimulatorTest.java:27)
+  <testcase name="testGetSimulationResult" classname="LogicSimulatorTest" time="0.003">
+    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
+	at LogicSimulator.load(LogicSimulator.java:46)
+	at LogicSimulatorTest.testGetSimulationResult(LogicSimulatorTest.java:23)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -61,23 +55,10 @@ i i i | o
 	at java.lang.Thread.run(Thread.java:748)
 </failure>
   </testcase>
-  <testcase name="testGetTruthTable" classname="LogicSimulatorTest" time="0.0">
-    <failure message="org.junit.ComparisonFailure: expected:&lt;[Truth table:&#10;i i i | o&#10;1 2 3 | 1&#10;------+--&#10;0 0 0 | 0&#10;0 0 1 | 0&#10;0 1 0 | 0&#10;0 1 1 | 0&#10;1 0 0 | 1&#10;1 0 1 | 1&#10;1 1 0 | 0&#10;1 1 1 | 0&#10;]&gt; but was:&lt;[getTruthTable]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[Truth table:
-i i i | o
-1 2 3 | 1
-------+--
-0 0 0 | 0
-0 0 1 | 0
-0 1 0 | 0
-0 1 1 | 0
-1 0 0 | 1
-1 0 1 | 1
-1 1 0 | 0
-1 1 1 | 0
-]&gt; but was:&lt;[getTruthTable]&gt;
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at LogicSimulatorTest.testGetTruthTable(LogicSimulatorTest.java:40)
+  <testcase name="testGetTruthTable" classname="LogicSimulatorTest" time="0.001">
+    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
+	at LogicSimulator.load(LogicSimulator.java:46)
+	at LogicSimulatorTest.testGetTruthTable(LogicSimulatorTest.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -128,6 +109,8 @@ i i i | o
 	at java.lang.Thread.run(Thread.java:748)
 </failure>
   </testcase>
-  <system-out><![CDATA[]]></system-out>
+  <system-out><![CDATA[list0:null
+list0:null
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

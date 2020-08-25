@@ -11,17 +11,15 @@ public class Device
 
     public void addInputPin(Device iPin)
     {
-        // complete this method by yourself
+        this.iPins.add(iPin);
     }
-
     public void setInput(boolean value)
     {
-        // complete this method by yourself
+        throw new RuntimeException("This device is not allowed to call setInput() method.");
     }
 
     public boolean getOutput()
     {
-        // complete this method by yourself
-        return true;
+        throw new RuntimeException("This device is not allowed to call getOutput() method.");
     }
 }

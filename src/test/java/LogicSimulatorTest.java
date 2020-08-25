@@ -1,5 +1,6 @@
 import org.junit.*;
 
+import java.io.IOException;
 import java.util.Vector;
 
 import static org.junit.Assert.*;
@@ -16,8 +17,7 @@ public class LogicSimulatorTest
         file2Path = "src/File2.lcf";
     }
     @Test
-    public void testGetSimulationResult()
-    {
+    public void testGetSimulationResult() throws IOException {
         LogicSimulator logicSimulator = new LogicSimulator();
 
         logicSimulator.load(file1Path);
@@ -35,8 +35,7 @@ public class LogicSimulatorTest
                 "0 1 1 | 0\n", logicSimulator.getSimulationResult(inputValues));
     }
     @Test
-    public void testGetTruthTable()
-    {
+    public void testGetTruthTable() throws IOException {
         LogicSimulator logicSimulator = new LogicSimulator();
 
         logicSimulator.load(file1Path);

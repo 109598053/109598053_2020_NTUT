@@ -3,10 +3,10 @@ public class GateAND extends Device
     @Override
     public boolean getOutput() {
         int size = this.iPins.size();
+        boolean result = false;
         for(int i=0; i<size; i++){
-//            this.iPins.get(i)
-
+            result = result & this.iPins.get(i).getOutput();
         }
-        return true;
+        return result;
     }
 }
