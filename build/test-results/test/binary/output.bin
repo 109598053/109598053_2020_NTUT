@@ -1,2 +1,8 @@
-list0:null
-	list0:null
+)circuits_data.gets:[1, -1, 2.1, 3.1, 0]
+$circuits_data:[1, -1, 2.1, 3.1, 0]
+
+datai:-1
+	)circuits_data.gets:[1, -1, 2.1, 3.1, 0]
+	$circuits_data:[1, -1, 2.1, 3.1, 0]
+	
+datai:-1

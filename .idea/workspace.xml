@@ -29,21 +29,10 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Device.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Device.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/GateAND.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/GateAND.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/GateNOT.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/GateNOT.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/GateOR.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/GateOR.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/IPin.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/IPin.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/LogicSimulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/LogicSimulator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/OPin.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/OPin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/TextUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/TextUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/DeviceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/DeviceTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/LogicSimulatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/LogicSimulatorTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/DeviceTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/DeviceTest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/LogicSimulatorTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/LogicSimulatorTest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
@@ -53,15 +42,8 @@
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Device.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Device.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GateAND.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GateAND.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GateNOT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GateNOT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GateOR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GateOR.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/IPin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IPin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LogicSimulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogicSimulator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/OPin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OPin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TextUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TextUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LogicSimulatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LogicSimulatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,9 +100,6 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\Object-Oriented_Programming\src\main\java" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
@@ -129,6 +108,9 @@
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Object-Oriented_Programming\src\main\java" />
     </key>
   </component>
   <component name="RunManager" selected="Gradle.Tests in '109OrientationCourse_Object-Oriented_Programming.test'">
@@ -305,47 +287,47 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="685" y="380" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1597303899665" />
-    <state width="1237" height="311" key="GridCell.Tab.0.bottom" timestamp="1598327799324">
+    <state width="1237" height="301" key="GridCell.Tab.0.bottom" timestamp="1598345513643">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="311" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1598327799324" />
+    <state width="1237" height="301" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1598345513643" />
     <state width="1323" height="171" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1597066909270" />
     <state width="1493" height="284" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1598258404374" />
     <state width="1877" height="170" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1597306904928" />
-    <state width="1877" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1598260931021" />
+    <state width="1877" height="245" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1598339135566" />
     <state width="1637" height="274" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1680.1010@1920.0.1680.1010" timestamp="1598261816376" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597046694324" />
     <state width="2517" height="171" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1597134918341" />
-    <state width="1237" height="311" key="GridCell.Tab.0.center" timestamp="1598327799324">
+    <state width="1237" height="301" key="GridCell.Tab.0.center" timestamp="1598345513643">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="311" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1598327799324" />
+    <state width="1237" height="301" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1598345513643" />
     <state width="1323" height="171" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1597066909270" />
     <state width="1493" height="284" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1598258404374" />
     <state width="1877" height="170" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1597306904928" />
-    <state width="1877" height="284" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1598260931021" />
+    <state width="1877" height="245" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1598339135566" />
     <state width="1637" height="274" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1680.1010@1920.0.1680.1010" timestamp="1598261816376" />
     <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597046694324" />
     <state width="2517" height="171" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1597134918340" />
-    <state width="1237" height="311" key="GridCell.Tab.0.left" timestamp="1598327799323">
+    <state width="1237" height="301" key="GridCell.Tab.0.left" timestamp="1598345513643">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="311" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1598327799323" />
+    <state width="1237" height="301" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1598345513643" />
     <state width="1323" height="171" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1597066909270" />
     <state width="1493" height="284" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1598258404374" />
     <state width="1877" height="170" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1597306904928" />
-    <state width="1877" height="284" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1598260931021" />
+    <state width="1877" height="245" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1598339135566" />
     <state width="1637" height="274" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1680.1010@1920.0.1680.1010" timestamp="1598261816376" />
     <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597046694324" />
     <state width="2517" height="171" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1597134918340" />
-    <state width="1237" height="311" key="GridCell.Tab.0.right" timestamp="1598327799324">
+    <state width="1237" height="301" key="GridCell.Tab.0.right" timestamp="1598345513643">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="311" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1598327799324" />
+    <state width="1237" height="301" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1598345513643" />
     <state width="1323" height="171" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1597066909270" />
     <state width="1493" height="284" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1598258404374" />
     <state width="1877" height="170" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1597306904928" />
-    <state width="1877" height="284" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1598260931021" />
+    <state width="1877" height="245" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1598339135566" />
     <state width="1637" height="274" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1680.1010@1920.0.1680.1010" timestamp="1598261816376" />
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597046694324" />
     <state width="2517" height="171" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1597134918341" />
