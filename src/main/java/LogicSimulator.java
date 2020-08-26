@@ -77,12 +77,9 @@ public class LogicSimulator
             int cv_size = circuits_vector.size();
             for (int i = 0; i < cv_size; i++) {
                 circuits_data = (List) circuits_vector.get(i);
-                System.out.println("circuits_data.gets:" + circuits_data);
                 int j = 1;
                 while (!circuits_data.get(j).equals("0")) {
                     String data = circuits_data.get(j).toString();
-                    System.out.println("circuits_data:" + circuits_data);
-                    System.out.println("datai:" + data);
                     if (data.contains(".")) {
                         int op = Integer.valueOf(data.substring(0, data.indexOf(".")));
                         circuits.get(i).addInputPin(iPins.get(op - 1));
@@ -94,11 +91,6 @@ public class LogicSimulator
                     j++;
                 }
             }
-            System.out.println("circuits:"+circuits);
-            System.out.println("iPins:"+iPins);
-            System.out.println("oPins:"+oPins);
-
-
             return true;
         }
         catch (Exception e){

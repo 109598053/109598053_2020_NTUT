@@ -40,21 +40,23 @@ public class TextUI
                     try
                     {
                         inputPin = scanner.nextInt();
+                        if(inputPin.equals("0")){
+
+                        }
+                        else if(inputPin.equals("1")) {
+
+                        }
+                        else
+                        {
+                            System.out.println("The value of input pin must be 0/1");
+                            i--;
+                        }
                     }
                     catch (Exception e)
                     {
                         System.out.println("The value of input pin must be number");
                     }
 
-                    if(inputNum.equals("0"))
-                        booleans.add(false);
-                    else if(inputNum.equals("1"))
-                        booleans.add(true);
-                    else
-                    {
-                        System.out.println("The value of input pin must be 0/1");
-                        i--;
-                    }
                 }
                 break;
         }
