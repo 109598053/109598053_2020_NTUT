@@ -34,61 +34,78 @@ public class LogicSimulator
     public String getTruthTable(){        //顯示完整表格
         return "getTruthTable";
     }
-
-    public boolean load(String filepath) throws IOException {
-        FileReader fr = new FileReader(filepath);
-        BufferedReader br = new BufferedReader(fr);
-        ni = Integer.valueOf(br.readLine());//number_input
-        ng = Integer.valueOf(br.readLine());//number_gate
-        String str = null;
-        List circuits_data = new ArrayList<List>();
-        Vector circuits_vector = new Vector();
-        while ((str = br.readLine()) != null)
-        {
-            circuits_data = Arrays.asList(str.split(" "));  //[1, -1, 2.1, 3.1, 0]
-            circuits_vector.add(circuits_data);  //[[1, -1, 2.1, 3.1, 0], [3, -2, 0], [2, 2.1, -3, 0]]
-            //buildGates
-            String circuit_type = circuits_data.get(0).toString();
-            switch (circuit_type)
-            {
-                case "1":
-                    circuits.add(new GateAND());
-                    break;
-                case "2":
-                    circuits.add(new GateOR());
-                    break;
-                case "3":
-                    circuits.add(new GateNOT());
-                    break;
-            }
-        }
-        br.close();
-        fr.close();
-
-
-        int cv_size = circuits_vector.size();
-        for(int i=0;i<cv_size;i++){
-            circuits_data = (List) circuits_vector.get(i);
-            System.out.println("circuits_data.gets:"+circuits_data);
-            int j=1;
-            while(!circuits_data.equals("0")){
-                String data = circuits_data.get(j).toString();
-                System.out.println("circuits_data:"+circuits_data);
-                System.out.println("datai:"+data);
-                if(data.contains(".")){
-                    int op = Integer.valueOf(data);
-                    circuits.get(circuits.size()-1).addInputPin(oPins.get(op-1));
-//                    oPinUsedTimes.set(op-1, oPinUsedTimes.get(op-1)+1);
-                }
-                else if(data.contains("-")){
-                    int ip = (-1) * Integer.parseInt(data);
-                    circuits.get(circuits.size()-1).addInputPin(iPins.get(ip-1));
-            }
-        }
-                j++;
-            }
-        return true;
-////        if()
+    public String circuitStatus(){
+        String circuit_status = "";
+        circuit_status += "Circuit: " + iPins.size() + " input pins, " + oPins.size() + " output pins and " + circuits.size() + " gates\n";
+        return circuit_status;
     }
 
+    public boolean load(String filepath) throws IOException {
+        try {
+            FileReader fr = new FileReader(filepath);
+            BufferedReader br = new BufferedReader(fr);
+            ni = Integer.valueOf(br.readLine());//number_input
+            ng = Integer.valueOf(br.readLine());//number_gate
+            String str = null;
+            List circuits_data = new ArrayList<List>();
+            Vector circuits_vector = new Vector();
+            while ((str = br.readLine()) != null) {
+                circuits_data = Arrays.asList(str.split(" "));  //[1, -1, 2.1, 3.1, 0]
+                circuits_vector.add(circuits_data);  //[[1, -1, 2.1, 3.1, 0], [3, -2, 0], [2, 2.1, -3, 0]]
+                //buildGates
+                String circuit_type = circuits_data.get(0).toString();
+                switch (circuit_type) {
+                    case "1":
+                        circuits.add(new GateAND());
+                        break;
+                    case "2":
+                        circuits.add(new GateOR());
+                        break;
+                    case "3":
+                        circuits.add(new GateNOT());
+                        break;
+                }
+            }
+            br.close();
+            fr.close();
+
+            //buildIPins
+            for (int k = 0; k < ni; k++) {
+                iPins.add(new IPin());
+            }
+
+            int cv_size = circuits_vector.size();
+            for (int i = 0; i < cv_size; i++) {
+                circuits_data = (List) circuits_vector.get(i);
+                System.out.println("circuits_data.gets:" + circuits_data);
+                int j = 1;
+                while (!circuits_data.get(j).equals("0")) {
+                    String data = circuits_data.get(j).toString();
+                    System.out.println("circuits_data:" + circuits_data);
+                    System.out.println("datai:" + data);
+                    if (data.contains(".")) {
+                        int op = Integer.valueOf(data.substring(0, data.indexOf(".")));
+                        circuits.get(i).addInputPin(iPins.get(op - 1));
+//                    oPinUsedTimes.set(op-1, oPinUsedTimes.get(op-1)+1);
+                    } else if (data.contains("-")) {
+                        int ip = 0 - Integer.parseInt(data);
+                        circuits.get(i).addInputPin(circuits.get(ip - 1));
+                    }
+                    j++;
+                }
+            }
+            System.out.println("circuits:"+circuits);
+            System.out.println("iPins:"+iPins);
+            System.out.println("oPins:"+oPins);
+
+
+            return true;
+        }
+        catch (Exception e){
+            return false;
+        }
+    }
+    public Integer getNi(){
+        return ni;
+    }
 }
