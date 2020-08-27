@@ -1,16 +1,16 @@
 public class IPin extends Device
 {
-    boolean iPin = false;
+    private boolean iPin;
 
     @Override
     public void setInput(boolean value)
     {
-        iPin = value;
+        this.iPin = value;
     }
 
     @Override
     public boolean getOutput()
     {
-        return iPin;
+        return this.iPin;
     }
 }
