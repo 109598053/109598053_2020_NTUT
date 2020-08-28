@@ -1,6 +1,5 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
-import java.io.IOException;
 import java.util.*;
 
 public class LogicSimulator
@@ -36,9 +35,10 @@ public class LogicSimulator
         String result = "Truth table:\n";
         result += tableTitle();
         int intResult = (int) Math.pow(2, ni);
+
         for(int i=0;i<intResult;i++){
             String inputString = Integer.toBinaryString(i);
-            Vector<Boolean> inputValues = new Vector<Boolean>();
+            Vector<Boolean> inputValues = new Vector<>();
             int inputLength = inputString.length();
             while(inputLength<ni){
                 inputValues.add(false);  //padding 0
@@ -48,7 +48,7 @@ public class LogicSimulator
             inputLength = inputString.length();
             for(int j=0;j<inputLength;j++){
                 String inputSubString = inputString.substring(j, j+1);
-                inputValues.add(inputSubString.equals("1")?true:false);
+                inputValues.add(inputSubString.equals("1"));
                 result = result + inputSubString + " ";
             }
 
@@ -63,13 +63,13 @@ public class LogicSimulator
         return result;
     }
 
-    public boolean load(String filepath) throws IOException {
+    public boolean load(String filepath){
         try {
             FileReader fr = new FileReader(filepath);
             BufferedReader br = new BufferedReader(fr);
             setNI(Integer.valueOf(br.readLine()));
             setNG(Integer.valueOf(br.readLine()));
-            String str = null;
+            String str;
             List circuits_data = new ArrayList<List>();
             Vector circuits_vector = new Vector();
             while ((str = br.readLine()) != null) {
@@ -116,11 +116,11 @@ public class LogicSimulator
             while (!circuits_data.get(j).equals("0")) {
                 String data = circuits_data.get(j).toString();
                 if (data.contains(".")) {
-                    int op = Integer.valueOf(data.substring(0, data.indexOf(".")));
+                    int op = Integer.parseInt(data.substring(0, data.indexOf(".")));
                     circuits.get(i).addInputPin(circuits.get(op-1));
                     isOPin[op-1] = false;
                 } else if (data.contains("-")) {
-                    int ip = 0 - Integer.parseInt(data);
+                    int ip =  - Integer.parseInt(data);
                     circuits.get(i).addInputPin(iPins.get(ip - 1));
                 }
                 j++;
@@ -165,9 +165,7 @@ public class LogicSimulator
     private String getOutputsResult() {
         String result = "";
         for(int i=0;i<no;i++){
-            System.out.println("re:"+ oPins.get(i).getOutput());
             result = result + " " + (oPins.get(i).getOutput() ? "1" : "0");
-//            result += " 0";
         }
         result += "\n";
         return result;
